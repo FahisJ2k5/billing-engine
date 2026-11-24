@@ -168,7 +168,7 @@ The expected invoices in `examples/expected/` were calculated by hand **before**
 |---|---|
 | 83 unit tests | Passed on Python 3.10 (development sandbox) and Python 3.14.2 (GitHub Codespace). |
 | Mutation check | Six deliberate bugs were introduced one at a time (wrong rounding mode, unscaled tier limits, ignored rollover, tax on non-taxable credits, wrong fixed-charge days, naive kWh split). The tests caught all six. |
-| Python 3.11 and 3.12 | **Not run yet.** CI covers them. |
+| Python 3.10, 3.11 and 3.12 | Passed in GitHub Actions (CI run #1, commit 7403e21). |
 | ruff and mypy | Passed in a GitHub Codespace: `ruff check`, `ruff format --check` and strict `mypy`. |
 
 ## Limitations
