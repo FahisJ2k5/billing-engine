@@ -1,0 +1,27 @@
+{
+  "customer_id": "CUST-1005",
+  "currency": "USD",
+  "tax_rate": "0.08",
+  "billing_period": { "start": "2026-01-01", "end": "2026-02-01" },
+  "tariffs": [
+    {
+      "id": "RES-B",
+      "effective_from": "2025-01-01",
+      "daily_fixed_charge": "0.25",
+      "tiers": [
+        { "up_to_kwh": "100", "rate": "0.10" },
+        { "up_to_kwh": "300", "rate": "0.14" },
+        { "rate": "0.20" }
+      ]
+    }
+  ],
+  "meters": [{ "id": "M-500", "rollover_at": "100000" }],
+  "readings": [
+    { "meter_id": "M-500", "date": "2026-01-01", "value": "700" },
+    { "meter_id": "M-500", "date": "2026-02-01", "value": "1100" }
+  ],
+  "adjustments": [
+    { "description": "Goodwill credit", "amount": "-5.00", "taxable": true },
+    { "description": "Late payment fee", "amount": "3.50", "taxable": false }
+  ]
+}

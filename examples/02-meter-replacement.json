@@ -1,0 +1,31 @@
+{
+  "customer_id": "CUST-1002",
+  "currency": "USD",
+  "tax_rate": "0",
+  "billing_period": { "start": "2026-01-01", "end": "2026-02-01" },
+  "tariffs": [
+    {
+      "id": "RES-A",
+      "effective_from": "2025-01-01",
+      "daily_fixed_charge": "0.40",
+      "tiers": [{ "rate": "0.20" }]
+    }
+  ],
+  "meters": [
+    { "id": "OLD-7", "rollover_at": "100000" },
+    { "id": "NEW-8", "rollover_at": "100000" }
+  ],
+  "meter_replacements": [
+    {
+      "date": "2026-01-11",
+      "old_meter_id": "OLD-7",
+      "old_final_reading": "5100",
+      "new_meter_id": "NEW-8",
+      "new_initial_reading": "0"
+    }
+  ],
+  "readings": [
+    { "meter_id": "OLD-7", "date": "2026-01-01", "value": "5000" },
+    { "meter_id": "NEW-8", "date": "2026-02-01", "value": "210" }
+  ]
+}

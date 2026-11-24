@@ -1,0 +1,14 @@
+{
+  "_note": "Worked by hand. 400 kWh: 100 x 0.10 + 200 x 0.14 + 100 x 0.20 = 58.00; fixed 31 x 0.25 = 7.75; taxable base 58.00 + 7.75 - 5.00 = 60.75; tax 8% = 4.86; adjustments net -1.50.",
+  "total_kwh": "400",
+  "segment_kwh": ["400"],
+  "line_amounts": ["10.00", "28.00", "20.00", "7.75", "-5.00", "3.50", "4.86"],
+  "summary": {
+    "energy": "58.00",
+    "fixed": "7.75",
+    "adjustments": "-1.50",
+    "taxable_base": "60.75",
+    "tax": "4.86",
+    "total": "69.11"
+  }
+}

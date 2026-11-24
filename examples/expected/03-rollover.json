@@ -1,0 +1,14 @@
+{
+  "_note": "Worked by hand. Register wraps at 100000: 150 + 100000 - 99900 = 250 kWh at 0.12.",
+  "total_kwh": "250",
+  "segment_kwh": ["250"],
+  "line_amounts": ["30.00"],
+  "summary": {
+    "energy": "30.00",
+    "fixed": "0",
+    "adjustments": "0",
+    "taxable_base": "30.00",
+    "tax": "0.00",
+    "total": "30.00"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "customer_id": "CUST-1001",
+  "currency": "USD",
+  "tax_rate": "0.10",
+  "billing_period": { "start": "2026-01-01", "end": "2026-02-01" },
+  "tariffs": [
+    {
+      "id": "RES-A",
+      "effective_from": "2025-01-01",
+      "daily_fixed_charge": "0.50",
+      "tiers": [
+        { "up_to_kwh": "200", "rate": "0.10" },
+        { "rate": "0.15" }
+      ]
+    }
+  ],
+  "meters": [{ "id": "M-100", "rollover_at": "100000" }],
+  "readings": [
+    { "meter_id": "M-100", "date": "2026-01-01", "value": "1000" },
+    { "meter_id": "M-100", "date": "2026-02-01", "value": "1250" }
+  ]
+}

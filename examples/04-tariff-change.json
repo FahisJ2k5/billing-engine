@@ -1,0 +1,25 @@
+{
+  "customer_id": "CUST-1004",
+  "currency": "USD",
+  "tax_rate": "0",
+  "billing_period": { "start": "2026-01-01", "end": "2026-02-01" },
+  "tariffs": [
+    {
+      "id": "OLD-RATE",
+      "effective_from": "2025-01-01",
+      "daily_fixed_charge": "1.00",
+      "tiers": [{ "rate": "0.10" }]
+    },
+    {
+      "id": "NEW-RATE",
+      "effective_from": "2026-01-17",
+      "daily_fixed_charge": "2.00",
+      "tiers": [{ "rate": "0.20" }]
+    }
+  ],
+  "meters": [{ "id": "M-400", "rollover_at": "100000" }],
+  "readings": [
+    { "meter_id": "M-400", "date": "2026-01-01", "value": "2000" },
+    { "meter_id": "M-400", "date": "2026-02-01", "value": "2310" }
+  ]
+}

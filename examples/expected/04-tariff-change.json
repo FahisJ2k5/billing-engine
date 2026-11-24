@@ -1,0 +1,14 @@
+{
+  "_note": "Worked by hand. 310 kWh over 31 days = 10 per day. 16 days at the old tariff (160 kWh x 0.10, fixed 1.00), 15 days at the new (150 kWh x 0.20, fixed 2.00).",
+  "total_kwh": "310",
+  "segment_kwh": ["160", "150"],
+  "line_amounts": ["16.00", "16.00", "30.00", "30.00"],
+  "summary": {
+    "energy": "46.00",
+    "fixed": "46.00",
+    "adjustments": "0",
+    "taxable_base": "92.00",
+    "tax": "0.00",
+    "total": "92.00"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "customer_id": "CUST-1003",
+  "currency": "USD",
+  "tax_rate": "0",
+  "billing_period": { "start": "2026-03-01", "end": "2026-04-01" },
+  "tariffs": [
+    {
+      "id": "FLAT",
+      "effective_from": "2025-01-01",
+      "tiers": [{ "rate": "0.12" }]
+    }
+  ],
+  "meters": [{ "id": "M-300", "rollover_at": "100000" }],
+  "readings": [
+    { "meter_id": "M-300", "date": "2026-03-01", "value": "99900" },
+    { "meter_id": "M-300", "date": "2026-04-01", "value": "150" }
+  ]
+}
